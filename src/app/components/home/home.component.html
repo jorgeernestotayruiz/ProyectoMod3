@@ -1,0 +1,21 @@
+<div class="container main-conteiner">
+    <h1>Canal de Youtube</h1>
+    <hr>
+
+    <div class="card-columns">
+        <div *ngFor="let video of videos " class="card">
+
+            <img [src]="video.snippet.thumbnails.high.url" class="card-img-top" alt="...">
+            <div class="card-block">
+                <h2 class="card-title">{{video.snippet.title}}</h2>
+                <h5 class="card-text" style="color: #c05b0e;"> {{video.snippet.description}}</h5>
+                <button onclick="vervideo()" style="color: white; background-color: red; width: 100%;">
+                Ver Video
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    
+</div>
